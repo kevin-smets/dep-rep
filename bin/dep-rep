@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+'use strict';
+
+const argv = require('yargs').argv;
+const updateNotifier = require('update-notifier');
+
+const depRep = require('../lib/depRep');
+const pkg = require('../package.json');
+
+// check if a new version of dep-rep is available and print an update notification
+updateNotifier({pkg: pkg})
+    .notify({defer: false});
+
+if (argv.v || argv.version) return console.log(require('../package').version);
+
+depRep.report()
+    .then(function(report) {
+        console.log (JSON.stringify(report, null, 2));
+    })

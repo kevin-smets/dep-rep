@@ -1,0 +1,35 @@
+{
+  "name": "dep-rep",
+  "version": "0.2.3",
+  "description": "Dependency reporter and manager for bower and npm",
+  "main": "lib/depRep.js",
+  "scripts": {
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**/*Spec.js",
+    "ci": "mocha test/**/*Spec.js"
+  },
+  "contributors": [
+    "Kevin Smets <@smetskev>"
+  ],
+  "url": "https://github.com/kevin-smets/dep-rep",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevin-smets/dep-rep.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "dep-rep": "bin/dep-rep"
+  },
+  "dependencies": {
+    "fs-extra": ">= 0.26 && < 0.27",
+    "jiff": ">= 0.7 && < 0.8",
+    "npm-check-updates": "^2.5.6",
+    "semver": "^5.1.0",
+    "semver-diff": "^2.1.0",
+    "update-notifier": "^0.6.0",
+    "yargs": "^3.32.0"
+  },
+  "devDependencies": {
+    "istanbul": ">= 0.4 && <= 0.5",
+    "mocha": "^2.3.4"
+  }
+}
