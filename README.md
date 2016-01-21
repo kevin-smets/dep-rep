@@ -14,7 +14,7 @@ For `bower` you need to run `dep-rep -b` or `dep-rep --bower`.
 
 ### Node usage
 
-    npm i dep-rep    
+    npm i -D dep-rep    
 
 ```
 const depRep = require('dep-rep');
