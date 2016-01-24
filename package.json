@@ -1,11 +1,16 @@
 {
   "name": "dep-rep",
-  "version": "0.3.0",
-  "description": "Dependency reporter and manager for bower and npm",
+  "version": "0.3.1",
+  "description": "Dependency reporter for npm",
   "main": "lib/depRep.js",
   "engines": {
     "node": "> 4"
   },
+  "keywords": [
+    "dependency",
+    "dependencies",
+    "reporter"
+  ],
   "scripts": {
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**/*Spec.js",
     "ci": "mocha test/**/*Spec.js",

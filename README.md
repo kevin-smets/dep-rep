@@ -18,15 +18,15 @@ Output will look like this:
 
     npm i -D dep-rep    
 
-```
+```javascript
 const depRep = require('dep-rep');
 
-depRep.analyze(path/to/package.json, outputToConsole)
+depRep.analyze("path/to/package.json", outputToConsole)
 ```
 
-The path can be either relative to the cwd, or an absolute path.
+The path can be either relative to the cwd, or an absolute path. By default, it takes the `package.json` from the cwd.
 
-OutputToConsole will print the report to console (like the CLI), default is false.
+`outputToConsole` will print the report to console (like the CLI), default is false.
 
 ## Contribute
 
