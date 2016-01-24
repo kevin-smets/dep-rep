@@ -1,6 +1,6 @@
 # dep-rep
 
-Dependency reporter and manager for npm
+Dependency reporter for npm
 
 ## Get started
 
@@ -27,6 +27,12 @@ depRep.analyze("path/to/package.json", outputToConsole)
 The path can be either relative to the cwd, or an absolute path. By default, it takes the `package.json` from the cwd.
 
 `outputToConsole` will print the report to console (like the CLI), default is false.
+
+## TODO
+
+- add bower support
+- create a UI for the reporter (seperate project)
+- add dependency management
 
 ## Contribute
 
