@@ -1,6 +1,6 @@
 # dep-rep
 
-Dependency reporter and manager for bower and npm
+Dependency reporter and manager for npm
 
 ## Get started
 
@@ -10,7 +10,9 @@ Dependency reporter and manager for bower and npm
     
 From then on, you can run `dep-rep` in any folder containing a `package.json`.
 
-For `bower` you need to run `dep-rep -b` or `dep-rep --bower`.
+Output will look like this:
+
+![Image of CLI output](assets/out.png)
 
 ### Node usage
 
@@ -19,8 +21,12 @@ For `bower` you need to run `dep-rep -b` or `dep-rep --bower`.
 ```
 const depRep = require('dep-rep');
 
-depRep.report(currentJsonAsString, oldJsonAsString)
+depRep.analyze(path/to/package.json, outputToConsole)
 ```
+
+The path can be either relative to the cwd, or an absolute path.
+
+OutputToConsole will print the report to console (like the CLI), default is false.
 
 ## Contribute
 
