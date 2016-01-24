@@ -24,7 +24,7 @@ const depRep = require('dep-rep');
 depRep.analyze("path/to/package.json", outputToConsole)
 ```
 
-The path can be either relative to the cwd, or an absolute path. By default, it takes the `package.json` from the cwd.
+The path can be either relative to the cwd, or an absolute path. By default (pass null), it takes the `package.json` from the cwd.
 
 `outputToConsole` will print the report to console (like the CLI), default is false.
 
