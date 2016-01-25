@@ -6,13 +6,30 @@ Dependency reporter for npm
 
 ### CLI usage
 
-    npm i -g dep-rep
+    npm i -g dep-rep    
     
 From then on, you can run `dep-rep` in any folder containing a `package.json`.
 
+### Program parameters
+
+Parameters:
+
+```
+  -p        path to package.json e.g. -p="../package.json". Can be relative or absolute. 
+            Defaults to the package.json from the working dir.
+  --silent  be quiet, or not (default CLI = false, default as node module = true)
+  -v        prints out the version of dep-rep (only for CLI)
+```
+
+### Output example
+
 Output will look like this:
 
-![Image of CLI output](assets/out.png)
+![Image of CLI output](assets/report.png)
+
+Or, if everything is fine:
+
+![Image of CLI output](assets/report-ok.png)
 
 ### Node usage
 
@@ -21,12 +38,10 @@ Output will look like this:
 ```javascript
 const depRep = require('dep-rep');
 
-depRep.analyze("path/to/package.json", outputToConsole)
+depRep.analyze(options)
 ```
 
-The path can be either relative to the cwd, or an absolute path. By default (pass null), it takes the `package.json` from the cwd.
-
-`outputToConsole` will print the report to console (like the CLI), default is false.
+`options` is an object that takes the same properties as the CLI parameters (except for version). E.g. options.silent = true.
 
 ## TODO
 

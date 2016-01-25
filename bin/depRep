@@ -4,11 +4,11 @@
 const argv = require('yargs').argv;
 const depRep = require('../lib/depRep');
 
-var options = {
-    log: true
-};
-
 if (argv.v || argv.version) return console.log(require('../package').version);
+
+var options = {
+    silent: argv.silent || false
+};
 
 // path to package.json
 if (argv.p) {
