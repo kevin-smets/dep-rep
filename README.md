@@ -22,7 +22,11 @@ Parameters:
   -v        prints out the version of dep-rep (only for CLI)
 ```
 
--p can even be a remote (https) url, e.g. `dep-rep -p="https://raw.githubusercontent.com/kevin-smets/dep-rep/master/package.json"`
+-p can even be a remote (https) url, e.g. 
+
+```bash
+dep-rep -p="https://raw.githubusercontent.com/kevin-smets/dep-rep/master/package.json"
+```
 
 ### Output example
 
