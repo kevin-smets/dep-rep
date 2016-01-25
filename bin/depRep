@@ -4,6 +4,19 @@
 const argv = require('yargs').argv;
 const depRep = require('../lib/depRep');
 
+var options = {
+    log: true
+};
+
 if (argv.v || argv.version) return console.log(require('../package').version);
 
-depRep.analyze(null, true);
+// path to package.json
+if (argv.p) {
+    if (typeof argv.p === "string") {
+        options.p = argv.p;
+    } else {
+        return console.log("\n--p (path to package.json) expects a String (-p=\"../package.json\"\n");
+    }
+}
+
+depRep.analyze(options);
