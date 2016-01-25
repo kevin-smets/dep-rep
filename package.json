@@ -36,7 +36,7 @@
     "yargs": "^3.32.0"
   },
   "devDependencies": {
-    "istanbul": ">= 0.4 && <= 0.5",
+    "istanbul": ">= 0.4 <= 0.5",
     "mocha": "^2.3.4"
   }
 }
