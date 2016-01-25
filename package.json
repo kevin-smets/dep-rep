@@ -1,6 +1,6 @@
 {
   "name": "dep-rep",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Dependency reporter for npm",
   "main": "lib/depRep.js",
   "engines": {
@@ -33,7 +33,6 @@
     "npm": "^3.5.3",
     "semver": "^5.1.0",
     "semver-diff": "^2.1.0",
-    "semver-utils": "^1.1.1",
     "yargs": "^3.32.0"
   },
   "devDependencies": {
