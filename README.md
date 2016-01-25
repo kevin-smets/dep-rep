@@ -15,11 +15,14 @@ From then on, you can run `dep-rep` in any folder containing a `package.json`.
 Parameters:
 
 ```
-  -p        path to package.json e.g. -p="../package.json". Can be relative or absolute. 
+  -p        path to package.json e.g. -p="../package.json". 
+            Can be relative, absolute or an https url. 
             Defaults to the package.json from the working dir.
   --silent  be quiet, or not (default CLI = false, default as node module = true)
   -v        prints out the version of dep-rep (only for CLI)
 ```
+
+-p can even be a remote (https) url, e.g. `dep-rep -p="https://raw.githubusercontent.com/kevin-smets/dep-rep/master/package.json"`
 
 ### Output example
 
