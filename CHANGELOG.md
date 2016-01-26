@@ -1,5 +1,9 @@
 # dep-rep changelog
 
+## 2016-01-26 v0.3.10
+
+- Readme images fine-tuning
+
 ## 2016-01-26 v0.3.9
 
 - Added a progress bar for the CLI (node-progress)
