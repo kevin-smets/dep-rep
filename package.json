@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "chalk": "^1.1.1",
-    "lodash": "^4.0.1",
     "npm": "^3.5.3",
     "progress": "^1.1.8",
     "semver": "^5.1.0",
