@@ -1,5 +1,11 @@
 # dep-rep changelog
 
+## 2016-01-27 v0.4.0
+
+- dialed down on the promises, again
+- node usage now returns proper output
+- small readme update for node usage
+
 ## 2016-01-27 v0.3.12
 
 - removed lodash dependency

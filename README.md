@@ -38,7 +38,7 @@ Or, if everything is fine:
 
 ![Image of CLI output](assets/report-ok.png)
 
-### Node usage
+### Node usage (
 
     npm i -D dep-rep    
 
@@ -46,9 +46,17 @@ Or, if everything is fine:
 const depRep = require('dep-rep');
 
 depRep.analyze(options)
+  .then(function(result){
+    console.log(result);
+  })
+  .catch(function(err){
+    console.log("Ruh Roh: " + err);
+  })
 ```
 
 `options` is an object that takes the same properties as the CLI parameters (except for version). E.g. options.silent = true.
+
+The returned result is not a contract set in stone yet (this module is still in prerelease status).
 
 ## TODO
 
