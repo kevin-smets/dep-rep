@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "chalk": "^1.1.1",
+    "lodash": "^4.0.1",
     "npm": "^3.5.3",
     "progress": "^1.1.8",
     "semver": "^5.1.0",
@@ -37,7 +38,7 @@
     "yargs": "^3.32.0"
   },
   "devDependencies": {
-    "istanbul": ">= 0.4 <= 0.5",
+    "istanbul": "<= 0.5",
     "mocha": "^2.3.4"
   }
 }
