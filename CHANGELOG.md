@@ -1,5 +1,13 @@
 # dep-rep changelog
 
+## 2016-01-27 v0.3.12
+
+- removed lodash dependency
+
+## 2016-01-27 v0.3.11
+
+- Promises cleanup
+
 ## 2016-01-26 v0.3.10
 
 - Readme images fine-tuning
