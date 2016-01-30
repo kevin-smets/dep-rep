@@ -38,7 +38,7 @@ Or, if everything is fine:
 
 ![Image of CLI output](assets/report-ok.png)
 
-### Node usage (
+### Node usage
 
     npm i -D dep-rep    
 
