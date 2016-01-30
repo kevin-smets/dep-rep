@@ -1,6 +1,12 @@
 # dep-rep changelog
 
+## 2016-01-30 v0.5.2
+
+- Adjusted engines definition in package.json to node >= v0.10
+
 ## 2016-01-30 v0.5.1
+
+- Made dep-rep compatible with node v0.10 and up
 
 ## 2016-01-27 v0.4.0
 
