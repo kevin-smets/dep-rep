@@ -4,7 +4,7 @@
   "description": "Dependency reporter for npm",
   "main": "lib/depRep.js",
   "engines": {
-    "node": ">= 4.0"
+    "node": ">= 0.10"
   },
   "keywords": [
     "dependency",
