@@ -1,5 +1,7 @@
 # dep-rep changelog
 
+## 2016-01-30 v0.5.0
+
 ## 2016-01-27 v0.4.0
 
 - dialed down on the promises, again

@@ -30,14 +30,16 @@
   },
   "dependencies": {
     "chalk": "^1.1.1",
-    "npm": "^3.5.3",
+    "lodash": "^4.1.0",
+    "npm": "^3.6.0",
     "progress": "^1.1.8",
+    "promise": "^7.1.1",
     "semver": "^5.1.0",
     "semver-diff": "^2.1.0",
     "yargs": "^3.32.0"
   },
   "devDependencies": {
-    "istanbul": "<= 0.5",
+    "istanbul": "< 0.5",
     "mocha": "^2.3.4"
   }
 }

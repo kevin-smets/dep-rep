@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-const argv = require('yargs').argv;
-const depRep = require('../lib/depRep');
+var argv = require('yargs').argv;
+var depRep = require('../lib/depRep');
 
 if (argv.v || argv.version) return console.log(require('../package').version);
 
