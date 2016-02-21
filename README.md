@@ -6,23 +6,29 @@ Dependency reporter for npm
 
 ### CLI usage
 
-    npm i -g dep-rep    
+```
+npm i -g dep-rep
+```
     
-From then on, you can run `dep-rep` in any folder containing a `package.json`.
+From then on, you can run `dep-rep` in any folder containing a `package.json`. 
 
-### Program parameters
+Check `dep-rep -h` for more CLI options.
 
-Parameters:
+### Path declaration
 
+-p or --path can be a local or a remote (https) path to a package.json, e.g. 
+
+**Local:**
+
+```bash
+dep-rep -p="../dep-rep/package.json"
+
+# or
+
+dep-rep -p="/Users/user/dev/dep-rep/package.json"
 ```
-  -p        path to package.json e.g. -p="../package.json". 
-            Can be relative, absolute or an https url. 
-            Defaults to the package.json from the working dir.
-  --silent  be quiet, or not (default CLI = false, default as node module = true)
-  -v        prints out the version of dep-rep (only for CLI)
-```
 
--p can even be a remote (https) url, e.g. 
+**Remote:**
 
 ```bash
 dep-rep -p="https://raw.githubusercontent.com/kevin-smets/dep-rep/master/package.json"
@@ -40,7 +46,9 @@ Or, if everything is fine:
 
 ### Node usage
 
-    npm i -D dep-rep    
+```
+npm i -D dep-rep
+```
 
 ```javascript
 const depRep = require('dep-rep');
@@ -61,15 +69,18 @@ The returned result is not a contract set in stone yet (this module is still in 
 ## TODO
 
 - add bower support
-- create a UI for the reporter (seperate project)
 - add dependency management
 
 ## Contribute
 
 ### Run CI
 
-    npm run ci
+```
+npm run ci
+```
     
 ### Generate coverage
-  
-    npm run coverage
+
+```
+npm run coverage
+```
