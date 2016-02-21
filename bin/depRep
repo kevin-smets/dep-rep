@@ -1,22 +1,28 @@
 #!/usr/bin/env node
 'use strict';
 
-var argv = require('yargs').argv;
 var depRep = require('../lib/depRep');
+var path = require('path');
 
-if (argv.v || argv.version) return console.log(require('../package').version);
+var argv = require('yargs')
+    .usage('Usage: dep-rep [options]')
+    .options({
+        'p': {
+            alias: 'path',
+            default: path.join(process.cwd(), 'package.json'),
+            describe: 'Path to a package.json, can be local or remote',
+            type: 'string'
+        },
+        's': {
+            alias: 'silent',
+            default: false,
+            describe: 'Be quiet?',
+            type: 'boolean'
+        }
+    })
+    .version()
+    .help('h')
+    .alias('h', 'help')
+    .argv;
 
-var options = {
-    silent: argv.silent || false
-};
-
-// path to package.json
-if (argv.p) {
-    if (typeof argv.p === "string") {
-        options.p = argv.p;
-    } else {
-        return console.log("\n--p (path to package.json) expects a String (-p=\"../package.json\"\n");
-    }
-}
-
-depRep.analyze(options);
+depRep.analyze(argv);
