@@ -9,14 +9,14 @@ Dependency reporter for npm
 ```
 npm i -g dep-rep
 ```
-    
-From then on, you can run `dep-rep` in any folder containing a `package.json`. 
+
+From then on, you can run `dep-rep` in any folder containing a `package.json`.
 
 Check `dep-rep -h` for more CLI options.
 
 ### Path declaration
 
--p or --path can be a local or a remote (https) path to a package.json, e.g. 
+-p or --path can be a local or a remote (https) path to a package.json, e.g.
 
 **Local:**
 
@@ -73,12 +73,12 @@ The returned result is not a contract set in stone yet (this module is still in 
 
 ## Contribute
 
-### Run CI
+### Run tests
 
 ```
-npm run ci
+npm test
 ```
-    
+
 ### Generate coverage
 
 ```
