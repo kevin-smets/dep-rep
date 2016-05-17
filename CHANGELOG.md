@@ -1,10 +1,26 @@
 # dep-rep changelog
 
-## 2016-05-17 v0.5.3
+## 2016-05-17 v0.6.3
 
 - Loosened up the npm package versions
 - Removed outdated tests and created new ones
 - Added .travis.yml
+
+## 2016-04-26 v0.6.2
+
+- Updated dependencies and changed some npm scripts
+- Update dep-rep's dependencies
+- Fine tuning of node module usage options and updated README accordingly
+- Rework of CLI options
+
+## 2016-02-15 v0.6.1
+
+- Finetuning of diff report and updated report screenshot
+- Version fix npm deps
+
+## 2016-02-15 v0.6.0
+
+- Use npm in a spawn process and serious cleanup
 
 ## 2016-01-30 v0.5.2
 
