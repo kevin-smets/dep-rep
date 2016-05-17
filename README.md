@@ -72,6 +72,7 @@ The returned result is not a contract set in stone yet (this module is still in 
 
 - add bower support
 - add dependency management
+- handle -alpha or -rc.1 versions
 
 ## Contribute
 
