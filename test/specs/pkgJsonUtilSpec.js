@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 'use strict';
 
-const assert = require('assert');
+var assert = require('assert');
 
-const supported = require('../fixtures/supported.json');
-const unsupported = require('../fixtures/unsupported.json');
+var supported = require('../fixtures/supported.json');
+var unsupported = require('../fixtures/unsupported.json');
 
-const pkgJsonUtil = require('../../lib/pkgJsonUtil');
+var pkgJsonUtil = require('../../lib/pkgJsonUtil');
 
 describe('pkgJsonUtil', function () {
     describe('#getDependencies()', function () {

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 'use strict';
 
-const assert = require('assert');
+var assert = require('assert');
 
-const depRep = require('../../lib/depRep');
+var depRep = require('../../lib/depRep');
 
-const oldJson = require('../fixtures/old.json');
-const newJson = require('../fixtures/new.json');
-const unsupported = require('../fixtures/unsupported.json');
+var oldJson = require('../fixtures/old.json');
+var newJson = require('../fixtures/new.json');
+var unsupported = require('../fixtures/unsupported.json');
 
 function key(number, dev) {
     var prefix = "/dependencies/";
