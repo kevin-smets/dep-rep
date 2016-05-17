@@ -1,5 +1,7 @@
 # dep-rep
 
+[![Build Status](https://travis-ci.org/kevin-smets/dep-rep.svg?branch=master)](https://travis-ci.org/kevin-smets/dep-rep) [![Dependency Status](https://david-dm.org/kevin-smets/dep-rep.svg)](https://david-dm.org/kevin-smets/dep-rep) [![devDependency Status](https://david-dm.org/kevin-smets/dep-rep/dev-status.svg)](https://david-dm.org/kevin-smets/dep-rep#info=devDependencies)
+
 Dependency reporter for npm
 
 ## Get started
