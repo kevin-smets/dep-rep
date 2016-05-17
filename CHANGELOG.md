@@ -1,5 +1,11 @@
 # dep-rep changelog
 
+## 2016-05-17 v0.5.3
+
+- Loosened up the npm package versions
+- Removed outdated tests and created new ones
+- Added .travis.yml
+
 ## 2016-01-30 v0.5.2
 
 - Adjusted engines definition in package.json to node >= v0.10
