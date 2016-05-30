@@ -5,7 +5,7 @@ var depRep = require('../lib/depRep');
 var path = require('path');
 
 var argv = require('yargs')
-    .usage('Usage: dep-rep [options]')
+    .usage('dep-rep [--path "../otherDir/package.json"] [--silent]')
     .options({
         'p': {
             alias: 'path',
