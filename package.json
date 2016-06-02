@@ -1,6 +1,6 @@
 {
   "name": "dep-rep",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Dependency reporter for npm",
   "main": "lib/depRep.js",
   "engines": {
