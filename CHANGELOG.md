@@ -1,5 +1,11 @@
 # dep-rep changelog
 
+## 2016-05-02 v0.6.6
+
+- Updated npm packages
+- Added update-notifier (weekly checks)
+- Removed lodash for lodash.merge
+
 ## 2016-05-17 v0.6.3
 
 - Loosened up the npm package versions
